@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:4000";
+const API_URL = "https://news-aggregator-project.onrender.com"
 
 export const config = {
   api: {

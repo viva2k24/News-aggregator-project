@@ -6,7 +6,8 @@ const cron = require('./utils/cron');
 const config = require('./config/config');
 const { logger } = require('./utils/logger');
 
-require('dotenv').config();
+const dotenv = require('dotenv')
+dotenv.config({path: './.env'})
 
 const app = express();
 const PORT = config.port || 4000;
@@ -21,7 +22,7 @@ const mongooseOptions = {
   useUnifiedTopology: true,
 };
 
-mongoose.connect(config.mongoUri, mongooseOptions).then(() => logger.info('Connected to MongoDB')).catch(error => logger.error(`Error connecting to MongoDB: ${error}`));
+mongoose.connect(process.env.MONGO_URI, mongooseOptions).then(() => logger.info('Connected to MongoDB')).catch(error => logger.error(`Error connecting to MongoDB: ${error}`));
 
 app.use('/news', routes);
 cron.start();
