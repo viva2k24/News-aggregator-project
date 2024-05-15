@@ -22,7 +22,7 @@ const App = () => {
 
   return (
     <div>
-      <Header title="News-Aggregator" style={{background: 'aqua'}}/>
+      <Header title="NEWS  AGGREGATOR" />
       <Navbar onCategoryChange={handleCategoryChange} />
       <CardList articles={articles} />
     </div>

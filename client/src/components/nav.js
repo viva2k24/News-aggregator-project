@@ -9,7 +9,8 @@ const useStyles = makeStyles({
     bottom: 0,
     width: '100%',
     zIndex: 9999,
-    background: 'lightgrey'
+    background: 'white',
+
   },
 });
 

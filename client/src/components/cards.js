@@ -4,13 +4,14 @@ import { Card, CardHeader, CardMedia, CardContent, Typography, Button } from '@m
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
-    margin: 10,
-    height: 560,
-    background: '#fff',
+    maxWidth: 310,
+    margin: 5,
+    height: 260,
+    background: 'lightgrey',
     borderRadius: 1,
-    fontFamily: "comic-sans",
-    boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.5)',
+    border: "4px solid grey",
+    fontFamily: "sans-serif",
+    boxShadow: '2px 4px 12px rgba(0, 0, 0, 0.9)',
   },
   media: {
     height: 0,
